@@ -6,8 +6,8 @@ PASSWORD=""
 TENANT_ID=""
 TENANT_NAME=""
 
-IMAGE_CENTOS7=""
-FLAVOR_512M=""
+IMAGE=""
+FLAVOR=""
 ADMIN_PASSWORD=""
 KEY_NAME=""
 
@@ -36,8 +36,8 @@ HEADER_TOKEN="X-Auth-Token: ${TOKEN_ID}"
 SERVER_JSON=$(cat << EOF
 {
   "server": {
-    "imageRef": "${IMAGE_CENTOS7}",
-    "flavorRef": "${FLAVOR_512M}",
+    "imageRef": "${IMAGE}",
+    "flavorRef": "${FLAVOR}",
     "adminPass":"${ADMIN_PASSWORD}",
     "key_name": "${KEY_NAME}",
     "security_groups": [
